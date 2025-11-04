@@ -1,54 +1,85 @@
-import Hero from "@/components/Hero"
-import { AiOutlineOpenAI } from "react-icons/ai";
-import { RiClaudeFill } from "react-icons/ri";
-import { SiMake } from "react-icons/si";
-import { FaMailchimp } from "react-icons/fa";
-import { FaCcStripe } from "react-icons/fa";
-import { SiPaddle } from "react-icons/si";
-import { SiClerk } from "react-icons/si";
-import { BsPaypal } from "react-icons/bs";
-import { SiWoocommerce } from "react-icons/si";
-import { FaShopify } from "react-icons/fa";
-import { SiAuth0 } from "react-icons/si";
-import { SiGoogleanalytics } from "react-icons/si";
+import APIsUsedTrack from "@/components/APIsUsedTrack";
+import FeaturedWork from "@/components/FeaturedWork";
+import Hero from "@/components/Hero";
+import Button from "@/components/ui/Button";
+
+import Image from "next/image";
+import selfie from "@/public/selfie-no-bg.png";
+import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const page = () => {
   return (
     <>
       <Hero />
-      <div className="bg-(--primary-700) pb-10! pt-4!">
-        <div className="container overflow-hidden flex flex-col gap-8">
-          <p className="text-(--primary-600)">Experienced in using the following APIs</p>
-          <div className="flex items-center gap-24 max-md:gap-12 animate-infinite-scroll">
-            <AiOutlineOpenAI size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <RiClaudeFill size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiMake size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <FaMailchimp size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <FaCcStripe size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiPaddle size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiClerk size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <BsPaypal size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiWoocommerce size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <FaShopify size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiAuth0 size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiGoogleanalytics size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            {/* Duplicate for seamless loop */}
-            <AiOutlineOpenAI size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <RiClaudeFill size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiMake size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <FaMailchimp size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <FaCcStripe size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiPaddle size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiClerk size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <BsPaypal size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiWoocommerce size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <FaShopify size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiAuth0 size={64} className="opacity-70 max-md:size-24 shrink-0" />
-            <SiGoogleanalytics size={64} className="opacity-70 max-md:size-24 shrink-0" />
+      <APIsUsedTrack />
+      <FeaturedWork />
+      <section>
+        <div className="container flex ">
+          <div className="flex-1 group relative">
+            <Image
+              className="max-w-200 max-h-200 border-[2rem] 
+                    border-(--primary-800) rounded-full 
+                    overflow-hidden object-cover
+                    saturate-80 group-hover:saturate-100 
+                    transition-all duration-300"
+              src={selfie}
+              alt="Bogdan Stevanovic - selfie"
+            />
+            <Link
+              href="https://www.linkedin.com/in/bogdan-stevanovic/"
+              target="_blank"
+              className="absolute bottom-0 left-0 
+              p-[4.8rem]! bg-[#1F56B1] rounded-full
+              hover:scale-105 active:scale-95 duration-300 transition-all"
+            >
+              <FaLinkedin size={48} />
+            </Link>
+          </div>
+          <div className="flex-1">
+            <div className="flex flex-col gap-[.4rem]">
+              <span className="uppercase">About me</span>
+              <h2>
+                Who am <span className="text-(--primary-400)">I?</span>
+              </h2>
+            </div>
+            <p className="mt-12!">
+              Hi, I&apos;m Bogdan Stevanović, a Full-Stack Web Developer based
+              in Serbia, helping startups and eCommerce brands under $500K build
+              SaaS apps, tools, and digital products that actually drive growth.
+              Also, I&apos;m a coffee enthusiast who can&apos;t resist testing
+              new brews while coding!
+            </p>
+            <div className="">
+              <div className=" flex gap-[1.6rem] items-center py-[1.6rem]!">
+                <h3>
+                  2<span className="text-(--primary-400)">+</span>
+                </h3>
+                <p>years experience building digital products</p>
+              </div>
+              <hr className="opacity-30 text-(--primary-400)" />
+            </div>
+            <div className="">
+              <div className="flex gap-[1.6rem] items-center py-[1.6rem]!">
+                <h3>
+                  5<span className="text-(--primary-400)">+</span>
+                </h3>
+                <p>projects delivered from concept to production</p>
+              </div>
+              <hr className="opacity-30 text-(--primary-400)" />
+            </div>
+            <div className="flex gap-[1.6rem] items-center py-[1.6rem]!">
+              <h3>Optimization</h3>
+              <p>for speed and conversions across all projects</p>
+            </div>
+            <div className="flex items-center gap-[2.4rem] mt-16!">
+              <Button variant="gradient">Get to know me</Button>
+              <Button variant="secondary">Download CV</Button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
-  )
-}
-export default page
+  );
+};
+export default page;
