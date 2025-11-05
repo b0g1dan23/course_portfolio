@@ -27,7 +27,7 @@ html {
 
 @media screen and (max-width: 425px) {
   html {
-    font-size: 50%;
+    font-size: 52%;
   }
 }
 
@@ -37,6 +37,10 @@ body {
   font-size: 1.6rem;
   font-family: var(--font-outfit), sans-serif;
   line-height: 1.3;
+}
+
+input {
+  outline: none;
 }
 
 h1 {
@@ -185,6 +189,20 @@ section {
   }
 }
 
+@keyframes levitateHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /* Hero Load Animations */
 @keyframes slideInLeft {
   from {
@@ -220,6 +238,16 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.animate-levitate-horizontal-0 {
+  animation: levitateHorizontal 3s ease-in-out infinite;
+}
+.animate-levitate-horizontal-150 {
+  animation: levitateHorizontal 3s 0.15s ease-in-out infinite;
+}
+.animate-levitate-horizontal-300 {
+  animation: levitateHorizontal 3s 0.3s ease-in-out infinite;
 }
 
 .animate-slide-in-left-0 {
@@ -272,4 +300,26 @@ section {
   height: 1rem;
   background-color: var(--primary-700);
   clip-path: polygon(50% 0, 0 100%, 100% 50%);
+}
+
+section.Toastify {
+  padding: 0;
+}
+
+.border-linear {
+  position: relative;
+}
+
+.border-linear::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(to left, #5b6d12, var(--primary-400));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
 }

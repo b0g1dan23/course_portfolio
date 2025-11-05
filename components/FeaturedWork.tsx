@@ -18,7 +18,7 @@ const FeaturedWork = () => {
             high-quality code.
           </p>
         </div>
-        <div className="flex gap-[2.4rem]">
+        <div className="flex gap-[2.4rem] max-md:flex-col">
           {projectsData.map((project, index) => (
             <WorkCard key={index} {...project} />
           ))}
@@ -27,7 +27,7 @@ const FeaturedWork = () => {
           <Button variant="secondary">My work</Button>
         </div>
       </div>
-      <div className="absolute -bottom-1/2 blur-[56rem] right-0 translate-x-1/2 w-312 h-312 rounded-full bg-(--primary-500)"></div>
+      <div className="absolute -bottom-2/3 blur-[56rem] opacity-30 right-0 translate-x-1/2 w-312 h-312 rounded-full bg-(--primary-500)"></div>
     </section>
   );
 };
