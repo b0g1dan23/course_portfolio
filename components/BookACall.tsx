@@ -12,7 +12,7 @@ const BookACall = () => {
           I think the next logical step is to book the call with me.
         </p>
         <div className="w-fit mx-auto! relative  mt-[4.8rem]!">
-          <Button className="text-(--primary-600) hover:text-(--black)">
+          <Button className="text-(--primary-600) hover:text-(--black)" href="https://calendly.com/hi-boge/let-s-discuss-your-project">
             Book a 30-min call
           </Button>
           <span className="absolute top-0 right-0 -translate-y-1/2 text-[2.4rem]! rotate-15 translate-x-1/2 opacity-100!">

@@ -15,7 +15,7 @@ const data: Omit<ServicesStepProps, "idx">[] = [
     title: "Web Development",
     icon: FaCode,
     description:
-      "I build scalable eCommerce apps and tools that streamline operations and drive revenue.",
+      "I build scalable business apps and tools that streamline operations and drive revenue.",
   },
   {
     title: "API Integration",
@@ -33,7 +33,7 @@ const data: Omit<ServicesStepProps, "idx">[] = [
 
 const Services = () => {
   return (
-    <section className="relative">
+    <section className="relative" id="services">
       <div className="container flex gap-80 max-md:flex-col max-md:gap-40">
         <div className="flex flex-col gap-[2.4rem] max-w-180 items-start">
           <div className="flex flex-col gap-[.4rem] max-md:text-center">
@@ -44,7 +44,7 @@ const Services = () => {
             From custom features to full-stack applications — I make your ideas
             run smoothly.
           </p>
-          <Button variant="gradient" href="/#book-a-call">
+          <Button variant="gradient" href="https://calendly.com/hi-boge/let-s-discuss-your-project">
             Book a 30-min call
           </Button>
         </div>

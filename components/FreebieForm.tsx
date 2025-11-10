@@ -32,15 +32,48 @@ const FreebieForm = () => {
             id="input-email"
             className="p-[1.6rem]! flex-1 rounded-[.4rem] border border-(--primary-600)"
             placeholder="Enter your email address"
+            required
           />
-          <Button variant="gradient" type="submit">
+          <Button variant="gradient" type="submit" className="max-md:w-full">
             {pending ? "Sending freebie..." : "Get your freebie"}
           </Button>
         </div>
       </div>
-      <p className="text-[1.2rem]">
-        By clicking Sign Up you're confirming that you agree with our{" "}
-        <Link href="/terms">Terms and Conditions</Link>.
+
+      {/* GDPR Consent */}
+      <div className="flex flex-col gap-[1.2rem]">
+        <label className="flex items-start gap-[1.2rem] cursor-pointer">
+          <input
+            type="checkbox"
+            name="gdpr_consent"
+            required
+            className="w-6 h-6 accent-(--primary-400) cursor-pointer shrink-0"
+          />
+          <span className="text-[1.2rem]">
+            I agree to receive the freebie and understand my data will be processed according to the{" "}
+            <Link href="/privacy-policy" className="text-(--primary-400) hover:underline">
+              Privacy Policy
+            </Link>. *
+          </span>
+        </label>
+
+        <label className="flex items-start gap-[1.2rem] cursor-pointer">
+          <input
+            type="checkbox"
+            name="newsletter_consent"
+            className="w-6 h-6 accent-(--primary-400) cursor-pointer shrink-0"
+          />
+          <span className="text-[1.2rem]">
+            I would like to receive updates, tips, and exclusive content via email. You can unsubscribe at any time.
+          </span>
+        </label>
+      </div>
+
+      <p className="text-[1rem] opacity-70">
+        By submitting this form, you agree to our{" "}
+        <Link href="/terms" className="text-(--primary-400) hover:underline">
+          Terms and Conditions
+        </Link>. * Required fields
       </p>
     </form>
   );

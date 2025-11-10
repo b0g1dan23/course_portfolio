@@ -60,7 +60,7 @@ const Navigation = () => {
 
           <div className="flex items-center gap-4">
             <Button
-              href="/#book-a-call"
+              href="https://calendly.com/hi-boge/let-s-discuss-your-project"
               className="max-lg:hidden"
             >
               Book a call
@@ -102,7 +102,7 @@ const Navigation = () => {
             </li>
           ))}
           <li>
-            <Button href="/#book-a-call" className="w-full text-center" onClick={() => setShowMenu(false)}>
+            <Button href="https://calendly.com/hi-boge/let-s-discuss-your-project" className="w-full text-center" onClick={() => setShowMenu(false)}>
               Book a call
             </Button>
           </li>

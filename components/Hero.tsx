@@ -11,7 +11,6 @@ import { RiNextjsFill } from "react-icons/ri";
 import { FaStripe } from "react-icons/fa";
 import { FaShopify } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
-import Typewriter from "@/components/ui/Typewriter";
 
 const Hero = () => {
   return (
@@ -26,7 +25,7 @@ const Hero = () => {
             I fix code that kills conversion
           </h1>
           <p className="max-w-[48ch] max-lg:text-center">
-            I help eCommerce brands fix the invisible technical issues that
+            I help businesses fix the invisible technical issues that
             steal revenue: slow product pages, bad bundle logic, broken events,
             low lighthouse scores, half-broken apps, messy JS. <br />
             <br />I ship fixes that turn traffic into orders — consistently.
@@ -36,7 +35,7 @@ const Hero = () => {
           <Button
             className="w-full text-center"
             variant="gradient"
-            href="/#book-a-call"
+            href="https://calendly.com/hi-boge/let-s-discuss-your-project"
           >
             Book a call
           </Button>
@@ -61,7 +60,6 @@ const Hero = () => {
                 alt="Selfie 1"
                 width={36}
                 height={36}
-                objectFit="cover"
               />
             </div>
             <div className="rounded-full overflow-hidden w-fit border border-(--white) -ml-3!">
@@ -71,7 +69,6 @@ const Hero = () => {
                 alt="Selfie 2"
                 width={36}
                 height={36}
-                objectFit="cover"
               />
             </div>
             <div className="rounded-full overflow-hidden w-fit border border-(--white) -ml-3!">
@@ -81,7 +78,6 @@ const Hero = () => {
                 alt="Selfie 3"
                 width={36}
                 height={36}
-                objectFit="cover"
               />
             </div>
             <div className="rounded-full overflow-hidden w-fit border border-(--white) -ml-3!">
@@ -91,12 +87,11 @@ const Hero = () => {
                 alt="Selfie 4"
                 width={36}
                 height={36}
-                objectFit="cover"
               />
             </div>
           </div>
           <div className="relative animate-slide-in-left-450">
-            <span>Trusted by people in eCommerce niche</span>
+            <span>Trusted by businesses worldwide</span>
             <Image
               src={vector}
               alt="Line vector"

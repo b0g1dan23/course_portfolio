@@ -49,7 +49,7 @@ const AboutMe = () => {
           </div>
           <p className="mt-12!">
             Hi, I&apos;m Bogdan Stevanović, a Full-Stack Web Developer based in
-            Serbia, helping startups and eCommerce brands under $500K build SaaS
+            Serbia, helping startups and businesses under $500K build SaaS
             apps, tools, and digital products that actually drive growth. Also,
             I&apos;m a coffee enthusiast who can&apos;t resist testing new brews
             while coding!
@@ -77,7 +77,7 @@ const AboutMe = () => {
             <p>for speed and conversions across all projects</p>
           </div>
           <div className="flex items-center gap-[2.4rem] mt-16!">
-            <Button variant="gradient" href="/#book-a-call">
+            <Button variant="gradient" href="https://calendly.com/hi-boge/let-s-discuss-your-project">
               Get to know me
             </Button>
             <Button variant="secondary">Download CV</Button>
