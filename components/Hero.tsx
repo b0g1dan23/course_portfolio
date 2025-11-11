@@ -42,7 +42,7 @@ const Hero = () => {
           <Button
             className="w-full text-center"
             variant="secondary"
-            href="/#work"
+            href="/work"
           >
             My Work
           </Button>

@@ -18,13 +18,13 @@ const FeaturedWork = () => {
             high-quality code.
           </p>
         </div>
-        <div className="flex gap-[2.4rem] max-lg:flex-col">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[2.4rem]">
           {projectsData.map((project, index) => (
-            <WorkCard key={index} {...project} />
+            <WorkCard key={index} {...project} index={index} />
           ))}
         </div>
         <div className="flex items-center justify-center">
-          <Button variant="secondary">My work</Button>
+          <Button variant="secondary" href="/work">My work</Button>
         </div>
       </div>
       <div className="absolute -bottom-2/3 blur-[56rem] opacity-30 right-0 translate-x-1/2 w-312 h-312 rounded-full bg-(--primary-500)"></div>

@@ -3,22 +3,23 @@ import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 
 export interface WorkCardProps {
-  image: StaticImageData;
+  cardImage: StaticImageData;
   title: string;
   description: string;
   projectLink: string;
 }
 
 const WorkCard = ({
-  image,
+  cardImage,
   title,
   description,
   projectLink,
-}: WorkCardProps) => {
+  index,
+}: WorkCardProps & { index: number }) => {
   return (
-    <div className="bg-(--primary-700)  hover:-translate-y-4 transition-all duration-300 ease-in-out w-full">
+    <div className={`bg-(--primary-700) h-full hover:-translate-y-4 transition-all duration-300 ease-in-out w-full animate-fade-in-${index + 1}`}>
       <div className="relative w-full aspect-3/2">
-        <Image src={image} alt={`${title} - project image`} fill unoptimized />
+        <Image src={cardImage} alt={`${title} - project image`} fill unoptimized />
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
