@@ -34,9 +34,9 @@ const data: Omit<ServicesStepProps, "idx">[] = [
 const Services = () => {
   return (
     <section className="relative" id="services">
-      <div className="container flex gap-80 max-md:flex-col max-md:gap-40">
-        <div className="flex flex-col gap-[2.4rem] max-w-180 items-start">
-          <div className="flex flex-col gap-[.4rem] max-md:text-center">
+      <div className="container flex gap-80 max-lg:flex-col max-lg:gap-40 max-lg:items-center">
+        <div className="flex flex-col gap-[2.4rem] max-w-180 items-start max-lg:items-center max-lg:text-center">
+          <div className="flex flex-col gap-[.4rem] max-lg:text-center">
             <span className="uppercase">Services</span>
             <h2>How can I help you?</h2>
           </div>
@@ -61,9 +61,9 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <div className="w-356 h-356 absolute max-md:hidden bottom-0 left-0 translate-y-1/2 -translate-x-1/2 border-[1.6rem] -z-1 border-(--primary-800) rounded-full"></div>
-      <div className="w-272 h-272 absolute max-md:hidden bottom-0 left-0 translate-y-1/2 -translate-x-1/2 border-[1.6rem] -z-1 border-(--primary-800) rounded-full"></div>
-      <div className="w-172 h-172 absolute max-md:hidden bottom-0 left-0 translate-y-1/2 -translate-x-1/2 border-[1.6rem] -z-1 border-(--primary-800) rounded-full"></div>
+      <div className="w-356 h-356 absolute max-lg:hidden bottom-0 left-0 translate-y-1/2 -translate-x-1/2 border-[1.6rem] -z-1 border-(--primary-800) rounded-full"></div>
+      <div className="w-272 h-272 absolute max-lg:hidden bottom-0 left-0 translate-y-1/2 -translate-x-1/2 border-[1.6rem] -z-1 border-(--primary-800) rounded-full"></div>
+      <div className="w-172 h-172 absolute max-lg:hidden bottom-0 left-0 translate-y-1/2 -translate-x-1/2 border-[1.6rem] -z-1 border-(--primary-800) rounded-full"></div>
     </section>
   );
 };

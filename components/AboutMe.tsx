@@ -7,10 +7,10 @@ import Link from "next/link";
 const AboutMe = () => {
   return (
     <section>
-      <div className="container flex max-md:flex-col">
+      <div className="container flex max-lg:flex-col max-lg:items-center">
         <div className="flex-1 group relative">
           <Image
-            className="max-w-200 max-md:w-full max-md:aspect-square max-h-200 border-[2rem] 
+            className="max-w-200 max-lg:w-full max-lg:aspect-square max-h-200 border-[2rem] 
                     border-(--primary-800) rounded-full 
                     overflow-hidden object-cover
                     saturate-80 group-hover:saturate-100 
@@ -22,10 +22,10 @@ const AboutMe = () => {
             href="https://www.linkedin.com/in/bogdan-stevanovic/"
             target="_blank"
             className="absolute bottom-0 left-0 
-              p-[4.8rem]! max-md:p-[3.2rem]! bg-[#1F56B1] rounded-full
+              p-[4.8rem]! max-lg:p-[3.2rem]! bg-[#1F56B1] rounded-full
               hover:scale-105 active:scale-95 duration-300 transition-all"
           >
-            <FaLinkedin size={48} className="max-md:size-[3.6rem]" />
+            <FaLinkedin size={48} className="max-lg:size-[3.6rem]" />
           </Link>
           <div className="absolute animate-levitate-horizontal-0 top-10 left-14 p-[1.2rem]! bg-(--white) text-(--black) flex items-center gap-4! rounded-md">
             <span className="opacity-100!">🚗</span>

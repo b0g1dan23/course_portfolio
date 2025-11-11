@@ -18,7 +18,7 @@ const FeaturedWork = () => {
             high-quality code.
           </p>
         </div>
-        <div className="flex gap-[2.4rem] max-md:flex-col">
+        <div className="flex gap-[2.4rem] max-lg:flex-col">
           {projectsData.map((project, index) => (
             <WorkCard key={index} {...project} />
           ))}

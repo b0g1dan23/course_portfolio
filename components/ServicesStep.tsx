@@ -16,7 +16,7 @@ const ServicesStep = ({
   isLast = false,
 }: ServicesStepProps) => {
   return (
-    <div className="flex items-start gap-12">
+    <div className="flex items-start gap-12 max-lg:gap-8">
       {!isLast ? (
         <div className="flex flex-col items-center">
           <div className="p-[2.6rem]! relative aspect-square bg-(--primary-700) rounded-[.4rem]">
@@ -25,7 +25,7 @@ const ServicesStep = ({
               <span className="opacity-100">{idx}</span>
             </div>
           </div>
-          <div className="h-[6.4rem] w-[.4rem]! bg-(--primary-700)"></div>
+          <div className="h-[6.4rem] max-lg:h-32 w-[.4rem]! bg-(--primary-700)"></div>
         </div>
       ) : (
         <div className="p-[2.6rem]! relative aspect-square bg-(--primary-700) rounded-[.4rem]">

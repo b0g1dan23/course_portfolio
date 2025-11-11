@@ -23,9 +23,9 @@ const FreebieForm = () => {
   }, [state]);
 
   return (
-    <form className="flex gap-[1.2rem] flex-col" action={action}>
+    <form className="flex gap-[1.6rem] flex-col max-lg:w-full" action={action}>
       <div className="">
-        <div className="flex gap-[1.6rem] max-md:flex-col">
+        <div className="flex gap-[1.6rem] max-md:flex-col max-lg:mt-24!">
           <input
             type="email"
             name="email"
@@ -73,7 +73,7 @@ const FreebieForm = () => {
         By submitting this form, you agree to our{" "}
         <Link href="/terms" className="text-(--primary-400) hover:underline">
           Terms and Conditions
-        </Link>. * Required fields
+        </Link>. <br />* Required fields
       </p>
     </form>
   );

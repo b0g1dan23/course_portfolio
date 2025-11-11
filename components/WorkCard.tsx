@@ -16,7 +16,7 @@ const WorkCard = ({
   projectLink,
 }: WorkCardProps) => {
   return (
-    <div className="bg-(--primary-700)  hover:-translate-y-4 transition-all duration-300 ease-in-out">
+    <div className="bg-(--primary-700)  hover:-translate-y-4 transition-all duration-300 ease-in-out w-full">
       <div className="relative w-full aspect-3/2">
         <Image src={image} alt={`${title} - project image`} fill unoptimized />
         <div

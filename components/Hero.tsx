@@ -15,16 +15,16 @@ import { FaGolang } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="container relative flex max-lg:flex-col justify-between h-[calc(100vh-8rem)] max-lg:h-auto items-center">
-      <div className="w-full flex flex-1 flex-col max-lg:items-center max-lg:pt-16!">
+      <div className="w-full flex flex-1 flex-col max-lg:items-start max-lg:pt-16!">
         <div className="flex items-center gap-[.8rem] bg-(--primary-600) w-fit px-4! py-4! rounded-md animate-slide-in-left-0">
           <BiSolidHappyHeartEyes size={24} />
           <span>Satisfaction guaranteed</span>
         </div>
-        <div className="flex flex-col gap-4 mt-[1.6rem]! animate-slide-in-left-150">
-          <h1 className="max-lg:text-center">
+        <div className="flex flex-col gap-4 max-lg:gap-[2.4rem] mt-[1.6rem]! animate-slide-in-left-150">
+          <h1>
             I fix code that kills conversion
           </h1>
-          <p className="max-w-[48ch] max-lg:text-center">
+          <p className="max-w-[48ch]">
             I help businesses fix the invisible technical issues that
             steal revenue: slow product pages, bad bundle logic, broken events,
             low lighthouse scores, half-broken apps, messy JS. <br />
@@ -51,7 +51,7 @@ const Hero = () => {
           className="w-7xl h-276 rounded-full absolute top-1/2 -left-250 -translate-y-1/2 -z-1 
         bg-(--primary-700)/70 blur-[40rem]"
         ></div>
-        <div className="flex items-center gap-[1.6rem] mt-16!">
+        <div className="flex items-center max-lg:flex-col w-full gap-[1.6rem] mt-16!">
           <div className="flex items-center animate-slide-in-left-450">
             <div className="rounded-full overflow-hidden w-fit border border-(--white)">
               <Image
