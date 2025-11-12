@@ -3,8 +3,10 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import Navigation from "@/components/Navigation";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from "@/components/Footer";
+
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -29,6 +31,7 @@ export default function RootLayout({
         <Footer />
         <ToastContainer position="top-right" theme="dark" />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
