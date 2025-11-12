@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { Bounce, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import Navigation from "@/components/Navigation";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from "@/components/Footer";
 
 const outfit = Outfit({
@@ -27,6 +28,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <ToastContainer position="top-right" theme="dark" />
+        <SpeedInsights />
       </body>
     </html>
   );
