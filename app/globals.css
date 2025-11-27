@@ -92,11 +92,9 @@ section {
   border-width: 1px;
   border-style: solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(
-    to right,
-    var(--primary-400),
-    var(--primary-700)
-  );
+  border-image-source: linear-gradient(to right,
+      var(--primary-400),
+      var(--primary-700));
 }
 
 .animate-load-shopify {
@@ -243,9 +241,11 @@ section {
 .animate-levitate-horizontal-0 {
   animation: levitateHorizontal 3s ease-in-out infinite;
 }
+
 .animate-levitate-horizontal-150 {
   animation: levitateHorizontal 3s 0.15s ease-in-out infinite;
 }
+
 .animate-levitate-horizontal-300 {
   animation: levitateHorizontal 3s 0.3s ease-in-out infinite;
 }
@@ -330,6 +330,7 @@ section.Toastify {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

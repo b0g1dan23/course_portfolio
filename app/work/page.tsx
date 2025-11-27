@@ -3,7 +3,7 @@ import projectsData from "@/data/projectsData";
 
 const page = () => {
     return (
-        <section className="relative overflow-x-clip py-20!">
+        <section className="relative overflow-hidden py-20!">
             <div className="container flex flex-col gap-20">
                 {/* Heading Section */}
                 <div className="flex flex-col items-center gap-[1.6rem] animate-slide-in-up-300">
@@ -28,7 +28,7 @@ const page = () => {
             </div>
 
             {/* Background Decoration */}
-            <div className="absolute -bottom-1/2 blur-[56rem] opacity-20 left-0 -translate-x-1/2 w-312 h-312 rounded-full bg-(--primary-400)"></div>
+            <div className="absolute -bottom-1/2 blur-[56rem] opacity-20 left-0 -translate-x-1/2 w-312 h-312 rounded-full bg-(--primary-400) -z-1"></div>
             <div className="absolute -top-1/3 blur-[56rem] opacity-20 right-0 translate-x-1/2 w-312 h-312 rounded-full bg-(--primary-500)"></div>
         </section>
     )
