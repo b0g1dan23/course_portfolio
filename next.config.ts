@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
       }
     ],
     qualities: [75, 100]
+  },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '100mb'
+    }
   }
 };
 
